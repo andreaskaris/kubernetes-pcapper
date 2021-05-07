@@ -9,7 +9,7 @@ Targeting a pod:
 apiVersion: packetcapture/v1alpha1
 kind: PacketCapture
 metadata:
-  name: pcap
+  name: pcap1
   namespace: pcapper
 spec:
   targetNamespace: test-namespace
@@ -23,7 +23,7 @@ Targeting an interface:
 apiVersion: packetcapture/v1alpha1
 kind: PacketCapture
 metadata:
-  name: pcap
+  name: pcap2
   namespace: pcapper
 spec:
   targetNode: worker-01
