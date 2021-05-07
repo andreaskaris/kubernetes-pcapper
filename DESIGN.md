@@ -1,12 +1,6 @@
 ### Implementation details
 
-#### Operator
-
-The operator will be deployed in namespace `pcapper` and will only be able to manipulate objects inside this namespace.
-
-The operator pod is responsible for deploying a single DaemonSet called `pcapper`.
-
-The operator is responsible for deploying the `PacketCapture` CRD.
+A first version of this tool will directly deploy the correct namespace `pcapper`, the appropriate roles, rolebindings, the `PacketCapture` CRD and the `pcapper` DaemonSet via helm. Creating an Operator with e.g. the OperatorSDK seems like overkill for this first version.
 
 #### DaemonSet pcapper
 
